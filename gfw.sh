@@ -100,7 +100,7 @@ clear
 echo "================================================"
 echo "SSL time. Lets get secure!"
 echo "Please enter 'start temporary webserver' if prompted."
-certbot certonly -d $domainvar 
+certbot certonly -d $domainvar --nginx
 chmod -R +777 /etc/letsencrypt
 clear
 echo "Now let's get the GFW-Trojan configured!"
